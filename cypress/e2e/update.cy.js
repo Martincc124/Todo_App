@@ -1,6 +1,6 @@
 describe('Update', () => {
   it('Updates todo item', () => {
-    cy.visit('http://192.168.0.3:8080/')
+    cy.visit('http://localhost:8080/')
     cy.get('.edit-btn').first().click()
     cy.get('input').clear()
     cy.get('input').type('Updated React js')

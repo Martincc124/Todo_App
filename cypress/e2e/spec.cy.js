@@ -1,6 +1,6 @@
 describe('My First Test', () => {
   it('Visits the Kitchen Sink', () => {
-    cy.visit('http://192.168.0.3:8080/')
+    cy.visit('http://localhost:8080/')
     cy.get('input').type('Angular js')
     cy.get('.add-btn').click()
 
