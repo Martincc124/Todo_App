@@ -19,9 +19,9 @@
             </tr>
         </thead>
         <tbody>
-            <tr v-for="(task,index) in tasks" :key="index">
+            <tr class="todo-item" v-for="(task,index) in tasks" :key="index" :id="[index]">
                 <td>{{task.id}}</td>
-                <td>{{task.name}}</td>
+                <td class="todo-name">{{task.name}}</td>
 
                 <td>
                     <button class="del-btn" @click="deleteTask(index)">Delete</button>
@@ -63,6 +63,11 @@ export default {
         }
     },
     methods: {
+        // test
+        test(number) {
+        return number * 2;
+        },
+
         // delete task
         deleteTask(index) {
             this.tasks.splice(index, 1)
