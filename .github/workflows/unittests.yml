@@ -1,6 +1,5 @@
-name: 'Test'
-on: 
-  pull_request:
+name: Run Unit Tests and Lint Files
+"on": push
 
 jobs:
   test:
