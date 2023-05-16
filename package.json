@@ -9,10 +9,12 @@
     "dev": "vite",
     "test:unit": "vitest",
     "test": "vitest",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
+    "@vitest/coverage-c8": "^0.31.0",
     "@vue/test-utils": "^2.3.2",
     "bootstrap": "^5.2.3",
     "bootstrap-vue": "^2.23.1",
